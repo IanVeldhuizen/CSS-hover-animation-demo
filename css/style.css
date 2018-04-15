@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-size: 1.3em;
+  background-color: #888888;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+h2 {
+  align-self: center;
+  margin: auto;
+  color: #424242;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px; 
+  margin: auto;
+  list-style-type: none;
+}
+
+.box li {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.mid {
+  display: flex;
+}
+
+.top, .mid, .low {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 33.4%;
+  transition-duration: 0.9s;
+}
+
+.top {
+  background-color: rgba(231, 115, 20, 0.6);
+  left: 400px;
+  top: 0%;
+}
+
+.mid {
+  background-color: #e98b3f;
+  left: -400px;
+  top: 33.4%;
+}
+
+.low {
+  background-color: rgba(231, 115, 20, 0.6);
+  left: 400px;
+  top: 66.7%;
+
+}
+
+.box li:hover .top, .box li:hover .low {
+  left: 0px;
+}
+
+.box li:hover .mid {
+  left: 0px;
+}
+
